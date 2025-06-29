@@ -57,7 +57,7 @@ ros2 run lane_follower lane_follower_node\
 ---
 
 ## Project Result
-(./lane_following_output.mp4)](./lane_following_output.mp4)
+[![Lane Tracking Output](./lane_following_output.mp4)](./lane_following_output.mp4)
 
 ---
 
