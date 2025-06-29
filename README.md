@@ -57,6 +57,7 @@ ros2 run lane_follower lane_follower_node\
 ---
 
 ## Project Result
+[![Tracking Output](./redball_tracking.gif)](./redball_tracking.gif)
 
 ---
 
