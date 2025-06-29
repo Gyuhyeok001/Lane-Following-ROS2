@@ -77,7 +77,3 @@ This project is licensed under the MIT License.
 
 ## Author
 - GitHub: Gyuhyeok001
-
-python
-복사
-편집
