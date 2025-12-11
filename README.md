@@ -14,7 +14,7 @@ It processes camera (or test video) input in real time, detects lane lines, and 
 ---
 
 ## Project Structure
-
+```test
 lane_ws/
 └── src/
     └── lane_follower/
@@ -27,7 +27,7 @@ lane_ws/
         └── lane_follower/
             ├── __init__.py
             └── lane_follower_node.py
-            
+```            
 ---
 
 ## Features
