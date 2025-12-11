@@ -52,7 +52,7 @@ colcon build
 source install/setup.bash
 
 ### 2. Run the node
-ros2 run lane_follower lane_follower_node\
+ros2 run lane_follower lane_follower_node
 
 ---
 
