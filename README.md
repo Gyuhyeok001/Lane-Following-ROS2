@@ -12,7 +12,7 @@ It reads a sample road video from the package, detects lane markings, and record
 - OpenCV
 - Python 3.8+
 - NumPy
-- 
+  
 ---
 
 ## Project Structure
