@@ -1,16 +1,18 @@
 # Lane Following Robot with ROS 2 & OpenCV
 
-This project demonstrates a **lane-following robot simulation** using **ROS 2 (Humble)** and **OpenCV**.  
-It processes camera (or test video) input in real time, detects lane lines, and publishes control commands to drive the robot using `geometry_msgs/Twist`.
+This package demonstrates a simple lane detection pipeline using **ROS 2**, **OpenCV**, and **Python**.  
+It reads a sample road video from the package, detects lane markings, and records an annotated output video.
 
 ---
 
 ## Tech Stack
 
-- ROS 2 (Humble)
-- Python 3
+- ROS 2 (Foxy / Humble)
+- rclpy
 - OpenCV
-
+- Python 3.8+
+- NumPy
+- 
 ---
 
 ## Project Structure
@@ -32,22 +34,18 @@ lane_ws/
 
 ## Features
 
-- Loads test video or camera feed using OpenCV
-- Processes the frame using:
-- Grayscale, Gaussian blur
-- Canny edge detection
-- Hough Transform for line detection
-- Classifies left/right lane lines
-- Draws dashed green lines for each lane
-- Publishes Twist commands to /cmd_vel based on center error
-- Built with ROS2 rclpy and a timer-based event loop
+- Reads a test lane video (`lanevideo.mp4`) from the package share directory
+- Applies grayscale, Gaussian blur, Canny edge detection, and Hough transform
+- Draws detected lane segments as dashed lines on each frame
+- Displays the processed video in a window
+- Saves the annotated video as `lane_following_output.mp4`
 
 ---
 
 ## How to Run
 
 ### 1. Build the workspace
-cd ~/Lane_following_Project/lane_ws
+cd ~/lane_following_Project/lane_ws        # adjust to your actual workspace path
 colcon build
 source install/setup.bash
 
@@ -69,6 +67,7 @@ ros2 run lane_follower lane_follower_node
 - Tune Twist output using PID control
 - Add launch files and parameter support
 
+
 ---
 
 ## License
@@ -77,4 +76,4 @@ This project is licensed under the MIT License.
 ---
 
 ## Author
-- GitHub: Gyuhyeok001
+- GitHub: [Gyuhyeok001](https://github.com/Gyuhyeok001)
